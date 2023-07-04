@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![ZEEMANO](https://github.com/muhammadali-mu/zeemano/assets/71942347/ef177cf4-cd02-434f-adc7-03123419b696)
+# ZEEMANO
 
-## Getting Started
 
-First, run the development server:
+[zeemano.com](https://zeemano.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## OverView
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is a starter project that uses Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Account management
+* Styled with Tailwind
+* Authentication via Email, Phone number
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+This project uses [`iransansX`] font ([Thanks to font iran.com](https://fontiran.com/fonts/iransans)) .
 
 ## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Zeemano.com are one of the biggest medical equipment sellers provide health-related goods either to medical providers or directly to consumers in iran . 
+For example, you may sell bulk products like syringes or IV fluid bags to hospitals. 
+Or you could open a retail store that sells medical supplies like arm slings and walkers.
