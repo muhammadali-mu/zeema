@@ -1,9 +1,20 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ratione fugiat vitae cum pariatur consectetur? Ad quo aliquid, a ex laborum aperiam! Rem quis unde natus officia saepe, nisi, pariatur ab ducimus facere commodi possimus aperiam nihil quo? Vero itaque, illo expedita, accusantium vitae dolores voluptates impedit consequatur facere, aut quos ratione mollitia aperiam atque quas omnis temporibus excepturi ex tempore sit voluptatibus nulla in saepe! Beatae magni esse sit autem eos iste veritatis voluptatibus quae. Soluta similique quia id porro veniam possimus quam eum fuga nostrum nemo, voluptate nam eligendi animi ea delectus saepe quasi suscipit nihil ex officia!</p>
+    <main className="flex content-end font-black h-screen w-full">
+      <p>
+        ما در زیمانو سعی داریم تا متنوع‌ترین و با کیفیت ترین لوازم بهداشتی
+        و123455555555 تجهیزات پزشکی بیمارستانی، درمانگاهی، مطب و کلینیک های
+        درمانی، همچنین تجهیزات مصرفی و لوازم پزشکی خانگی مناسب بیمار در منزل را
+        ارائه دهیم. هدف سایت فروش تجهیزات پزشکی زیمانو، معرفی کالای درمانی،
+        پزشکی، سلامت و بهداشتی با بهترین کیفیت و قیمت بدون واسطه، به خصوص برای
+        مراکز درمانی است. پخش و توزیع لوازم مصرفی پزشکی و بهداشتی در زیمانو به
+        آسانی به سراسر کشور انجام می‌شود. قیمت تجهیزات مصرفی پزشکی و بیمارستانی
+        در سامانه فروش آنلاین زیمانو، برای تمامی مراکز درمانی، آموزشی، خیریه‌ها
+        و بیماران در منزل ویژه است. ما فقط یک سایت فروش اینترنتی نیستیم، زیمانو
+        به دنبال کشف و معرفی تولید کنندگان تجهیزات پزشکی، تأمین کنندگان کالای
+        پزشکی و بهداشتی و نوآوران این عرصه هست و دست آنها را برای همکاری به گرمی
+        فشرده و آماده خدمت رسانی به این عزیزان می‌باشد.
+      </p>
     </main>
-  )
+  );
 }
