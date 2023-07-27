@@ -208,7 +208,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <nav
+          {/* <nav
             aria-label="primary-navigation"
             className="flex flex-row justify-center items-center gap-5 w-full h-12  bg-cyan-500  "
           >
@@ -231,7 +231,106 @@ export default function RootLayout({
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav> */}
+          <div className="shadow-[0px_1px_1px_0px_rgba(15,_23,_42,_0.1),_0px_10px_6px_-6px_rgba(51,_65,_85,_0.1)] overflow-hidden bg-[#f8fafc] flex flex-row justify-between w-full h-10 items-center pl-12 pr-8" >
+                <div className="flex flex-row justify-between gap-8 items-center" >
+                <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0" >
+                زیمانو پلاس
+{"   "}
+            </div><div className="min-h-0 min-w-0 w-px shrink-0" >
+                <svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L0.999999 21" stroke="#CBD5E1" stroke-linecap="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0" >
+                مجله زیمانو
+
+{" "}
+</div>
+</div><div className="flex flex-row gap-1 w-[948px] items-center" >
+<div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-px w-16 shrink-0" >
+تخفیف ویژه
+{" "}
+</div><div className="min-h-0 min-w-0 mr-8 w-5 shrink-0" >
+<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M16.978 3.70239L12.665 9.95962" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M12.8921 5.87261C13.477 5.87261 13.9512 5.39843 13.9512 4.8135C13.9512 4.22857 13.477 3.75439 12.8921 3.75439C12.3072 3.75439 11.833 4.22857 11.833 4.8135C11.833 5.39843 12.3072 5.87261 12.8921 5.87261Z" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M17.8097 8.84869C17.8097 9.43373 17.3347 9.90865 16.7475 9.90865C16.1624 9.90865 15.6875 9.43373 15.6875 8.84869C15.6875 8.26366 16.1624 7.78931 16.7475 7.78931C17.335 7.78931 17.8097 8.26338 17.8097 8.84869Z" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M9.5474 1.144V4.744H6.01799L9.33564 1H19.3089C19.7748 1 20.156 1.38118 20.156 1.84706V11.8152C20.156 12.2806 19.7748 12.6623 19.3089 12.6623H2.24745C1.78157 12.6623 1.40039 12.2806 1.40039 11.8152V1.84706C1.40039 1.38118 1.78157 1 2.24745 1H5.9474V2.62635" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M5.99707 6.08252V7.57955" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M5.99707 8.59839V10.0957" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M5.99707 11.114V12.615" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0" >
+                خوراکی سلامت
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-24 shrink-0" >
+                محصولات پوست و مو
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0" >
+                دستگاه و لوازم
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-6 w-24 shrink-0" >
+                محصولات بهداشتی
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-3 w-12 shrink-0" >
+                لوازم پزشکی
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-4 w-px shrink-0" >
+<svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M1 1L0.999999 21" stroke="#CBD5E1" stroke-linecap="round"/>
+</svg>
+
+            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-12 shrink-0" >
+                لوازم پزشکی
+
+{" "}
+</div><div className="min-h-0 min-w-0 mr-10 w-5 shrink-0" >
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M4 6H16M4 10.5H16M4 15H16" stroke="#334155" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div><div className="text-right whitespace-nowrap text-xs font-['IRANSansX'] text-[#00a2a2] w-[107px] shrink-0" >
+                تجهیزات پزشکی زیمانو
+
+{" "}
+</div>
+</div>
+</div>
+
         </header>
         {children}
       </body>
