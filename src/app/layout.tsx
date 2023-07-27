@@ -130,10 +130,16 @@ export default function RootLayout({
                   <input
                     type="search"
                     id="default-search"
-                    className="block w-96 p-3 pr-10 text-sm font-light text-zinc-900 border border-zinc-300 rounded-xl bg-slate-100 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 placeholder-zinc-700"
+                    className="block w-96 p-3 pr-10 text-sm font-light text-zinc-900 border border-zinc-300 rounded-xl bg-slate-100 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 placeholder-zinc-700 flex flex-row justify-end gap-4 w-full h-12 items-center px-4 rounded-lg"
                     placeholder="جست و جو محصول یا برند در زیمانو "
                     required
                   />
+                  
+                  
+      
+                
+ 
+            
                   <button
                     type="submit"
                     className="sr-only absolute left-2.5 bottom-2.5 "
@@ -141,17 +147,64 @@ export default function RootLayout({
                     Search
                   </button>
                 </div>
+                
               </form>
+              <button
+ 
+  className="border-solid border-[#00828b] bg-white flex flex-col justify-center w-100 h-12 px-5 border rounded-lg"
+>
+  <div className="text-center whitespace-nowrap text-sm font-['IRANSansX'] font-medium text-[#00a2a2]">
+    درخواست خرید عمده
+  </div>
+</button>
 
-              <div>
-                <button>hole sale</button>
-                <button>login</button>
-              </div>
+<button  className="border-solid border-[#cbd5e1] flex flex-row justify-center gap-3 p-3 h-12 items-center border-2 rounded-lg" >
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.7222 6.44444C16.7222 7.62318 16.254 8.75365 15.4205 9.58714C14.587 10.4206 13.4565 10.8889 12.2778 10.8889C11.099 10.8889 9.96858 10.4206 9.13508 9.58714C8.30159 8.75365 7.83333 7.62318 7.83333 6.44444C7.83333 5.2657 8.30159 4.13524 9.13508 3.30175C9.96858 2.46825 11.099 2 12.2778 2C13.4565 2 14.587 2.46825 15.4205 3.30175C16.254 4.13524 16.7222 5.2657 16.7222 6.44444ZM12.2778 14.2222C10.215 14.2222 8.23667 15.0417 6.77806 16.5003C5.31944 17.9589 4.5 19.9372 4.5 22H20.0556C20.0556 19.9372 19.2361 17.9589 17.7775 16.5003C16.3189 15.0417 14.3406 14.2222 12.2778 14.2222Z" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div className="text-center whitespace-nowrap font-['IRANSansX'] font-medium text-[#475569] w-1/2" >
+                ورود
+{"  "}
+|
+{"  "}
+ثبت نام
+            </div><div className="min-h-0 min-w-0 w-6 shrink-0" >
 
-              <div>
-                <span>Favorit</span>
-                <span>Cart</span>
-              </div>
+            </div>
+            </button>
+
+            <div className="flex flex-row gap-4 w-24 items-center px-2" >
+                <div className="flex flex-row gap-1 w-10 shrink-0 items-center my-0" >
+                <div className="relative flex flex-col mb-px pb-2 w-8 shrink-0 items-end" >
+                <div className="min-h-0 min-w-0 w-6 shrink-0" >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z" stroke="#00A2A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            {/* <div className="border-solid border-[#f8fafc] bg-[#dc2626] relative flex flex-col w-5 h-3 shrink-0 items-center py-1 border rounded-lg" >
+                <div className="text-sm font-['IRANSansX'] font-medium text-[#f8fafc] w-2/5" >
+                9
+            </div>
+            </div> */}
+            </div><div className="min-h-0 min-w-0 w-px shrink-0" >
+                <svg width="2" height="26" viewBox="0 0 2 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M1 1L0.999999 25" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            </div><div className="min-h-0 min-w-0 w-6 shrink-0" >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z" stroke="#00A2A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div>
+            </div>
+
+
+      
             </div>
           </div>
 
