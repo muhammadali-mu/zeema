@@ -64,11 +64,8 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="fa-IR">
       <body className={IRANSansFaNum.className}>
-        <header className="flex flex-col justify-start items-center w-full h-min bg-transparent sticky top-0 border-2 border-solid border-zinc-800 ">
-          <h1 className="sr-only">
-            زیمانو - فروشگاه اینترنتی پخش لوازم و تجهیزات پزشکی و بهداشتی
-          </h1>
-          <div className="flex flex-row justify-center items-center gap-5 h-16 w-full bg-clip-padding backdrop-blur-sm backdrop-brightness-95 backdrop-filter bg-white bg-opacity-40 ">
+        <header className="flex flex-col justify-start items-center drop-shadow-zeemano-shadow-nav w-full h-min bg-transparent sticky top-0 ">
+          <div className="flex flex-row justify-center items-center gap-5 h-16 w-full bg-slate-50 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 backdrop-brightness-95 px-4 ">
             <div className="flex flex-row justify-between items-center gap-6 h-12 w-full max-w-screen-2xl  ">
               <span role="link" className="block w-10 h-10 m-4 cursor-pointer">
                 <svg
@@ -204,7 +201,7 @@ export default function RootLayout({
                       >
                         <path
                           d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z"
-                          stroke-width="2"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
@@ -219,229 +216,282 @@ export default function RootLayout({
             </div>
           </div>
 
-          {/* <nav
+          <h1 className="sr-only">
+            زیمانو - فروشگاه اینترنتی پخش لوازم و تجهیزات پزشکی و بهداشتی
+          </h1>
+
+          <nav
             aria-label="primary-navigation"
-            className="flex flex-row justify-center items-center gap-5 w-full h-12  bg-cyan-500  "
+            className="flex flex-row justify-center items-center w-full h-10 bg-slate-50  "
           >
-            <div className=" flex flex-row justify-between items-center w-full max-w-screen-2xl bg-violet-600">
-              <ul className="flex flex-row justify-evenly items-start gap-5 m-1 font-light text-sm">
+            <div className=" flex flex-row justify-start items-center w-full gap-5 max-w-screen-2xl px-4">
+              <p className="whitespace-nowrap text-xs  text-zeemano-500 ">
+                تجهیزات پزشکی زیمانو{" "}
+              </p>
+
+              <ul className="flex flex-row justify-start items-center gap-5 m-1 font-light text-sm grow">
                 <li>
-                  <p>لوازم پزشکی </p>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-2 w-max h-6 text-slate-600  "
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className="stroke-slate-700"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 5H22M2 12.5H22M2 20H22"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <p className="text-sm text-slate-700 ">لوازم پزشکی</p>
+                  </button>
+
+                  <div
+                    id="dropdownNavbar"
+                    className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  >
+                    <ul
+                      className="py-2 text-sm text-gray-700 dark:text-gray-400"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          Settings
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          Earnings
+                        </a>
+                      </li>
+                    </ul>
+                    <div className="py-1">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                      >
+                        Sign out
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                <hr className="w-[2px] h-6 bg-slate-300 mx-2"></hr>
+
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <p className="text-sm text-center whitespace-nowrap text-slate-700 ">
+                      لوازم پزشکی
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className="stroke-slate-700 scale-50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L12 17L2 7"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li>
-                  <p>محصولات بهداشتی</p>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <p className="text-sm text-center whitespace-nowrap text-slate-700 ">
+                      محصولات بهداشتی{" "}
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className="stroke-slate-700 scale-50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L12 17L2 7"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li>
-                  <p>دستگاه و لوازم</p>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <p className="text-sm text-center whitespace-nowrap text-slate-700 ">
+                      دستگاه و لوازم
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className="stroke-slate-700 scale-50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L12 17L2 7"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li>
-                  <p>محصولات پوست و مو</p>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <p className="text-sm text-center whitespace-nowrap text-slate-700 ">
+                      محصولات پوست و مو
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className="stroke-slate-700 scale-50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L12 17L2 7"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li>
-                  <p>خوراکی سلامت</p>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <p className=" text-sm text-center whitespace-nowrap text-slate-700 ">
+                      خوراکی سلامت
+                    </p>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
+                  >
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      className="stroke-slate-700 scale-75"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29.9626 14.5039L22.7744 24.9326"
+                        strokeWidth="1.6"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                      />
+                      <path
+                        d="M23.1529 18.1207C24.1278 18.1207 24.918 17.3304 24.918 16.3555C24.918 15.3806 24.1278 14.5903 23.1529 14.5903C22.178 14.5903 21.3877 15.3806 21.3877 16.3555C21.3877 17.3304 22.178 18.1207 23.1529 18.1207Z"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeWidth="1.6"
+                      />
+                      <path
+                        d="M31.3494 23.0806C31.3494 24.0556 30.5579 24.8472 29.5791 24.8472C28.604 24.8472 27.8125 24.0556 27.8125 23.0806C27.8125 22.1055 28.604 21.3149 29.5791 21.3149C30.5584 21.3149 31.3494 22.1051 31.3494 23.0806Z"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeWidth="1.6"
+                      />
+                      <path
+                        d="M17.5784 10.24V16.24H11.696L17.2254 10H33.8475C34.624 10 35.2593 10.6353 35.2593 11.4118V28.0254C35.2593 28.8009 34.624 29.4372 33.8475 29.4372H5.41176C4.63529 29.4372 4 28.8009 4 28.0254V11.4118C4 10.6353 4.63529 10 5.41176 10H11.5784V12.7106"
+                        strokeMiterlimit="10"
+                        strokeLinejoin="round"
+                        strokeWidth="1.6"
+                      />
+                      <path
+                        d="M11.6611 18.4707V20.9658"
+                        strokeMiterlimit="10"
+                        strokeLinejoin="round"
+                        strokeWidth="1.6"
+                      />
+                      <path
+                        d="M11.6611 22.6636V25.1591"
+                        strokeMiterlimit="10"
+                        strokeLinejoin="round"
+                        strokeWidth="1.6"
+                      />
+                      <path
+                        d="M11.6611 26.8564V29.3581"
+                        strokeMiterlimit="10"
+                        strokeLinejoin="round"
+                        strokeWidth="1.6"
+                      />
+                    </svg>
+                    <p className=" text-sm text-center whitespace-nowrap text-slate-700 ">
+                      تخفیف ویژه
+                    </p>
+                  </button>
                 </li>
               </ul>
-            </div>
-          </nav> */}
-          <div className="shadow-[0px_1px_1px_0px_rgba(15,_23,_42,_0.1),_0px_10px_6px_-6px_rgba(51,_65,_85,_0.1)] overflow-hidden bg-[#f8fafc] flex flex-row justify-between w-full h-10 items-center pl-12 pr-8">
-            <div className="flex flex-row justify-between gap-8 items-center">
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0">
-                زیمانو پلاس
-                {"   "}
-              </div>
-              <div className="min-h-0 min-w-0 w-px shrink-0">
-                <svg
-                  width="2"
-                  height="22"
-                  viewBox="0 0 2 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1L0.999999 21"
-                    stroke="#CBD5E1"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0">
-                مجله زیمانو{" "}
+
+              <div className="flex flex-row justify-between items-center gap-4 ">
+                <p className="text-center whitespace-nowrap text-xs text-slate-700">
+                  زیمانو پلاس
+                </p>
+
+                <hr className="w-[2px] h-6 bg-slate-300 mx-auto"></hr>
+
+                <p className="text-center whitespace-nowrap text-xs text-slate-700">
+                  مجله زیمانو
+                </p>
               </div>
             </div>
-            <div className="flex flex-row gap-1 w-[948px] items-center">
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-px w-16 shrink-0">
-                تخفیف ویژه{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-8 w-5 shrink-0">
-                <svg
-                  width="21"
-                  height="14"
-                  viewBox="0 0 21 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.978 3.70239L12.665 9.95962"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M12.8921 5.87261C13.477 5.87261 13.9512 5.39843 13.9512 4.8135C13.9512 4.22857 13.477 3.75439 12.8921 3.75439C12.3072 3.75439 11.833 4.22857 11.833 4.8135C11.833 5.39843 12.3072 5.87261 12.8921 5.87261Z"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M17.8097 8.84869C17.8097 9.43373 17.3347 9.90865 16.7475 9.90865C16.1624 9.90865 15.6875 9.43373 15.6875 8.84869C15.6875 8.26366 16.1624 7.78931 16.7475 7.78931C17.335 7.78931 17.8097 8.26338 17.8097 8.84869Z"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M9.5474 1.144V4.744H6.01799L9.33564 1H19.3089C19.7748 1 20.156 1.38118 20.156 1.84706V11.8152C20.156 12.2806 19.7748 12.6623 19.3089 12.6623H2.24745C1.78157 12.6623 1.40039 12.2806 1.40039 11.8152V1.84706C1.40039 1.38118 1.78157 1 2.24745 1H5.9474V2.62635"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.99707 6.08252V7.57955"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.99707 8.59839V10.0957"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.99707 11.114V12.615"
-                    stroke="#475569"
-                    stroke-miterlimit="10"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0">
-                خوراکی سلامت{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
-                <svg
-                  width="8"
-                  height="6"
-                  viewBox="0 0 8 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
-                    stroke="#475569"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-24 shrink-0">
-                محصولات پوست و مو{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
-                <svg
-                  width="8"
-                  height="6"
-                  viewBox="0 0 8 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
-                    stroke="#475569"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0">
-                دستگاه و لوازم{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
-                <svg
-                  width="8"
-                  height="6"
-                  viewBox="0 0 8 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
-                    stroke="#475569"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-6 w-24 shrink-0">
-                محصولات بهداشتی{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
-                <svg
-                  width="8"
-                  height="6"
-                  viewBox="0 0 8 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
-                    stroke="#475569"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-3 w-12 shrink-0">
-                لوازم پزشکی{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-4 w-px shrink-0">
-                <svg
-                  width="2"
-                  height="22"
-                  viewBox="0 0 2 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1L0.999999 21"
-                    stroke="#CBD5E1"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-12 shrink-0">
-                لوازم پزشکی{" "}
-              </div>
-              <div className="min-h-0 min-w-0 mr-10 w-5 shrink-0">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6H16M4 10.5H16M4 15H16"
-                    stroke="#334155"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="text-right whitespace-nowrap text-xs font-['IRANSansX'] text-[#00a2a2] w-[107px] shrink-0">
-                تجهیزات پزشکی زیمانو{" "}
-              </div>
-            </div>
-          </div>
+          </nav>
         </header>
         {children}
       </body>

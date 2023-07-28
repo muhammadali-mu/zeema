@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        "zeemano-shadow-nav": [
+          "0px 1px 1px 0px rgba(15, 23, 42, 0.1)",
+          "0px 10px 6px -6px rgba(51, 65, 85, 0.1)",
+        ],
+      },
       colors: {
         "zeemano-950": "#021113",
         "zeemano-900": "#0A3438",
