@@ -68,36 +68,30 @@ export default function RootLayout({
           <h1 className="sr-only">
             زیمانو - فروشگاه اینترنتی پخش لوازم و تجهیزات پزشکی و بهداشتی
           </h1>
-          <div className="flex flex-row justify-center items-center gap-5 h-16 w-full bg-clip-padding backdrop-blur-sm bg-white/30 backdrop-brightness-95 backdrop-filter  back bg-white bg-opacity-5 ">
-            <div className="flex flex-row justify-between items-center gap-5 h-12 w-full max-w-screen-2xl  ">
-              <span
-                role="link"
-                className="flex-none block w-10 h-10 m-4 cursor-pointer"
-              >
+          <div className="flex flex-row justify-center items-center gap-5 h-16 w-full bg-clip-padding backdrop-blur-sm backdrop-brightness-95 backdrop-filter bg-white bg-opacity-40 ">
+            <div className="flex flex-row justify-between items-center gap-6 h-12 w-full max-w-screen-2xl  ">
+              <span role="link" className="block w-10 h-10 m-4 cursor-pointer">
                 <svg
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
-                  fill="none"
+                  fill="#00A2A2"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M40 20C40 8.9559 31.0482 0 20 0C8.9559 0 0 8.9559 0 20C0 31.0441 8.9559 40 20 40C31.0441 40 40 31.0441 40 20ZM20.7994 31.5436L18.0374 34.2031L18.0353 34.199C17.8976 33.6388 17.0333 33.0803 15.3553 31.9959C15.1346 31.8533 14.8998 31.7016 14.6507 31.5395L11.103 34.9559C12.8384 35.7631 13.78 36.4667 14.6928 37.9026C15.2299 37.4079 15.7065 36.9859 16.1197 36.62L16.1203 36.6195L16.1204 36.6194C16.8241 35.9963 17.3441 35.5358 17.6671 35.1559C19.1389 35.8852 20.0005 36.5867 20.8374 37.9026C21.3737 37.4097 21.8496 36.9891 22.2624 36.6243C23.5583 35.4789 24.2327 34.8828 24.2018 34.3259C24.1683 33.7216 23.3043 33.1633 21.5029 31.9992L21.5029 31.9992L21.5024 31.9989C21.2822 31.8566 21.0479 31.7052 20.7994 31.5436ZM33.6464 9.74367C30.8946 11.8791 28.072 15.1796 26.6238 18.0637C39.8546 16.878 36.9038 28.1201 29.0915 31.476C23.3253 33.6544 18.8238 29.9129 19.1776 23.6811C19.2118 23.076 19.2676 22.4767 19.3448 21.8831C18.4341 24.2821 17.0966 26.6011 15.2843 28.8575C11.7887 33.2192 11.1485 32.6946 7.98895 30.1056L7.98888 30.1056C7.50795 29.7115 6.96864 29.2696 6.35201 28.7898C9.1038 26.6544 11.9264 23.3539 13.3746 20.4688C0.143805 21.6544 3.09457 10.4175 10.9069 7.05649C16.673 4.87905 21.1746 8.62059 20.8207 14.8514C20.7865 15.4551 20.7308 16.0544 20.6535 16.6493C21.5643 14.2493 22.9028 11.9314 24.7141 9.67495C28.2104 5.31231 28.851 5.83735 32.0118 8.42821C32.4921 8.82194 33.0307 9.26339 33.6464 9.74264V9.74367ZM21.8798 2.09996L18.3332 5.51637C20.0634 6.3297 21.006 7.02816 21.9188 8.45893C24.1379 6.41897 25.3234 5.61661 25.2827 4.88225C25.2451 4.20399 24.1614 3.58373 21.8798 2.09996Z"
-                    fill="#00A2A2"
                   />
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M15.5071 16.3304C20.5481 3.82369 0.309129 17.5622 15.5071 16.3304Z"
-                    fill="#00A2A2"
                   />
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M24.4913 22.1951C39.6872 20.9633 19.4482 34.7018 24.4913 22.1951Z"
-                    fill="#00A2A2"
                   />
                 </svg>
               </span>
@@ -112,7 +106,7 @@ export default function RootLayout({
                 <div className="relative">
                   <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                     <svg
-                      className="w-4 h-4 text-slate-500 "
+                      className="w-4 h-4 text-slate-600 "
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -130,16 +124,11 @@ export default function RootLayout({
                   <input
                     type="search"
                     id="default-search"
-                    className="block w-96 p-3 pr-10 text-sm font-light text-zinc-900 border border-zinc-300 rounded-xl bg-slate-100 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 placeholder-zinc-700 flex flex-row justify-end gap-4 w-full h-12 items-center px-4 rounded-lg"
+                    className=" flex flex-row justify-end gap-4 items-center w-96 h-10 p-3 pr-10 appearance-none text-sm font-light text-zinc-900 bg-slate-100 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 placeholder-zinc-700 border border-zinc-300 rounded-xl"
                     placeholder="جست و جو محصول یا برند در زیمانو "
                     required
                   />
-                  
-                  
-      
-                
- 
-            
+
                   <button
                     type="submit"
                     className="sr-only absolute left-2.5 bottom-2.5 "
@@ -147,64 +136,86 @@ export default function RootLayout({
                     Search
                   </button>
                 </div>
-                
               </form>
-              <button
- 
-  className="border-solid border-[#00828b] bg-white flex flex-col justify-center w-100 h-12 px-5 border rounded-lg"
->
-  <div className="text-center whitespace-nowrap text-sm font-['IRANSansX'] font-medium text-[#00a2a2]">
-    درخواست خرید عمده
-  </div>
-</button>
+              <button className="flex items-center justify-center h-10 bg-gradient-to-r p-[1px] from-zeemano-500 via-zeemano-600 to-zeemano-auxiliary-green rounded-lg">
+                <div className="flex items-center justify-center h-full w-full  bg-white back rounded-[7px]">
+                  <p className="text-center whitespace-nowrap text-sm font-normal text-zeemano-700 px-4">
+                    درخواست خرید عمده
+                  </p>
+                </div>
+              </button>
 
-<button  className="border-solid border-[#cbd5e1] flex flex-row justify-center gap-3 p-3 h-12 items-center border-2 rounded-lg" >
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7222 6.44444C16.7222 7.62318 16.254 8.75365 15.4205 9.58714C14.587 10.4206 13.4565 10.8889 12.2778 10.8889C11.099 10.8889 9.96858 10.4206 9.13508 9.58714C8.30159 8.75365 7.83333 7.62318 7.83333 6.44444C7.83333 5.2657 8.30159 4.13524 9.13508 3.30175C9.96858 2.46825 11.099 2 12.2778 2C13.4565 2 14.587 2.46825 15.4205 3.30175C16.254 4.13524 16.7222 5.2657 16.7222 6.44444ZM12.2778 14.2222C10.215 14.2222 8.23667 15.0417 6.77806 16.5003C5.31944 17.9589 4.5 19.9372 4.5 22H20.0556C20.0556 19.9372 19.2361 17.9589 17.7775 16.5003C16.3189 15.0417 14.3406 14.2222 12.2778 14.2222Z" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                <div className="text-center whitespace-nowrap font-['IRANSansX'] font-medium text-[#475569] w-1/2" >
-                ورود
-{"  "}
-|
-{"  "}
-ثبت نام
-            </div><div className="min-h-0 min-w-0 w-6 shrink-0" >
+              <button className="flex flex-row justify-center items-center gap-3 h-10 w-max px-4 bg-white border-[1.6px] border-solid border-zinc-300 rounded-lg">
+                <div className="flex flex-row justify-center items-center text-slate-600 text-center whitespace-nowrap text-sm font-normal">
+                  <svg fill="none" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M16.2222 6.44444C16.2222 7.62318 15.754 8.75365 14.9205 9.58714C14.087 10.4206 12.9565 10.8889 11.7778 10.8889C10.599 10.8889 9.46858 10.4206 8.63508 9.58714C7.80159 8.75365 7.33333 7.62318 7.33333 6.44444C7.33333 5.2657 7.80159 4.13524 8.63508 3.30175C9.46858 2.46825 10.599 2 11.7778 2C12.9565 2 14.087 2.46825 14.9205 3.30175C15.754 4.13524 16.2222 5.2657 16.2222 6.44444ZM11.7778 14.2222C9.71498 14.2222 7.73667 15.0417 6.27806 16.5003C4.81944 17.9589 4 19.9372 4 22H19.5556C19.5556 19.9372 18.7361 17.9589 17.2775 16.5003C15.8189 15.0417 13.8406 14.2222 11.7778 14.2222Z"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="stroke-slate-600"
+                    />
+                  </svg>
+                  <p className="flex flex-row justify-center items-center px-2 ">
+                    ورود
+                  </p>
+                  <p className=" block px-2  border-r border-zinc-200">
+                    ثبت نام
+                  </p>
+                </div>
+              </button>
 
-            </div>
-            </button>
+              <div className="flex flex-row justify-center items-center gap-4 w-24 h-10 ">
+                <div>
+                  <div className="relative block w-6">
+                    <span role="button" className="w-6 h-6 block">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        className="stroke-zeemano-500"
+                        fill="none"
+                      >
+                        <path
+                          d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span className="absolute inline-flex items-center justify-center p-1 text-white bg-red-500 -top-3 -right-3 w-max min-w-[24px] h-6 border-2 border-solid border-slate-50 rounded-full">
+                      <p className="font-normal text-xs text-white">99</p>
+                    </span>
+                  </div>
+                </div>
 
-            <div className="flex flex-row gap-4 w-24 items-center px-2" >
-                <div className="flex flex-row gap-1 w-10 shrink-0 items-center my-0" >
-                <div className="relative flex flex-col mb-px pb-2 w-8 shrink-0 items-end" >
-                <div className="min-h-0 min-w-0 w-6 shrink-0" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z" stroke="#00A2A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                <hr className="w-[2px] h-6 bg-slate-300 mx-auto"></hr>
 
-            </div>
-            {/* <div className="border-solid border-[#f8fafc] bg-[#dc2626] relative flex flex-col w-5 h-3 shrink-0 items-center py-1 border rounded-lg" >
-                <div className="text-sm font-['IRANSansX'] font-medium text-[#f8fafc] w-2/5" >
-                9
-            </div>
-            </div> */}
-            </div><div className="min-h-0 min-w-0 w-px shrink-0" >
-                <svg width="2" height="26" viewBox="0 0 2 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M1 1L0.999999 25" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-            </div>
-            </div><div className="min-h-0 min-w-0 w-6 shrink-0" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z" stroke="#00A2A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div>
-            </div>
-
-
-      
+                <div>
+                  <div className="relative block w-6">
+                    <span role="button" className="w-6 h-6 block">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        className="stroke-zeemano-500"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z"
+                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span className="absolute inline-flex items-center justify-center p-1 text-white bg-red-500 -top-3 -right-3 w-max min-w-[24px] h-6 border-2 border-solid border-slate-50 rounded-full">
+                      <p className="font-normal text-xs text-white">99</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -232,105 +243,205 @@ export default function RootLayout({
               </ul>
             </div>
           </nav> */}
-          <div className="shadow-[0px_1px_1px_0px_rgba(15,_23,_42,_0.1),_0px_10px_6px_-6px_rgba(51,_65,_85,_0.1)] overflow-hidden bg-[#f8fafc] flex flex-row justify-between w-full h-10 items-center pl-12 pr-8" >
-                <div className="flex flex-row justify-between gap-8 items-center" >
-                <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0" >
+          <div className="shadow-[0px_1px_1px_0px_rgba(15,_23,_42,_0.1),_0px_10px_6px_-6px_rgba(51,_65,_85,_0.1)] overflow-hidden bg-[#f8fafc] flex flex-row justify-between w-full h-10 items-center pl-12 pr-8">
+            <div className="flex flex-row justify-between gap-8 items-center">
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0">
                 زیمانو پلاس
-{"   "}
-            </div><div className="min-h-0 min-w-0 w-px shrink-0" >
-                <svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L0.999999 21" stroke="#CBD5E1" stroke-linecap="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0" >
-                مجله زیمانو
-
-{" "}
-</div>
-</div><div className="flex flex-row gap-1 w-[948px] items-center" >
-<div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-px w-16 shrink-0" >
-تخفیف ویژه
-{" "}
-</div><div className="min-h-0 min-w-0 mr-8 w-5 shrink-0" >
-<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M16.978 3.70239L12.665 9.95962" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M12.8921 5.87261C13.477 5.87261 13.9512 5.39843 13.9512 4.8135C13.9512 4.22857 13.477 3.75439 12.8921 3.75439C12.3072 3.75439 11.833 4.22857 11.833 4.8135C11.833 5.39843 12.3072 5.87261 12.8921 5.87261Z" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M17.8097 8.84869C17.8097 9.43373 17.3347 9.90865 16.7475 9.90865C16.1624 9.90865 15.6875 9.43373 15.6875 8.84869C15.6875 8.26366 16.1624 7.78931 16.7475 7.78931C17.335 7.78931 17.8097 8.26338 17.8097 8.84869Z" stroke="#475569" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M9.5474 1.144V4.744H6.01799L9.33564 1H19.3089C19.7748 1 20.156 1.38118 20.156 1.84706V11.8152C20.156 12.2806 19.7748 12.6623 19.3089 12.6623H2.24745C1.78157 12.6623 1.40039 12.2806 1.40039 11.8152V1.84706C1.40039 1.38118 1.78157 1 2.24745 1H5.9474V2.62635" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M5.99707 6.08252V7.57955" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M5.99707 8.59839V10.0957" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
-<path d="M5.99707 11.114V12.615" stroke="#475569" stroke-miterlimit="10" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0" >
-                خوراکی سلامت
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
-<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-24 shrink-0" >
-                محصولات پوست و مو
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
-<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0" >
-                دستگاه و لوازم
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
-<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-6 w-24 shrink-0" >
-                محصولات بهداشتی
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-0 w-2 shrink-0" >
-<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-3 w-12 shrink-0" >
-                لوازم پزشکی
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-4 w-px shrink-0" >
-<svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M1 1L0.999999 21" stroke="#CBD5E1" stroke-linecap="round"/>
-</svg>
-
-            </div><div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-12 shrink-0" >
-                لوازم پزشکی
-
-{" "}
-</div><div className="min-h-0 min-w-0 mr-10 w-5 shrink-0" >
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M4 6H16M4 10.5H16M4 15H16" stroke="#334155" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            </div><div className="text-right whitespace-nowrap text-xs font-['IRANSansX'] text-[#00a2a2] w-[107px] shrink-0" >
-                تجهیزات پزشکی زیمانو
-
-{" "}
-</div>
-</div>
-</div>
-
+                {"   "}
+              </div>
+              <div className="min-h-0 min-w-0 w-px shrink-0">
+                <svg
+                  width="2"
+                  height="22"
+                  viewBox="0 0 2 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L0.999999 21"
+                    stroke="#CBD5E1"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-16 shrink-0">
+                مجله زیمانو{" "}
+              </div>
+            </div>
+            <div className="flex flex-row gap-1 w-[948px] items-center">
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-px w-16 shrink-0">
+                تخفیف ویژه{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-8 w-5 shrink-0">
+                <svg
+                  width="21"
+                  height="14"
+                  viewBox="0 0 21 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.978 3.70239L12.665 9.95962"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12.8921 5.87261C13.477 5.87261 13.9512 5.39843 13.9512 4.8135C13.9512 4.22857 13.477 3.75439 12.8921 3.75439C12.3072 3.75439 11.833 4.22857 11.833 4.8135C11.833 5.39843 12.3072 5.87261 12.8921 5.87261Z"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M17.8097 8.84869C17.8097 9.43373 17.3347 9.90865 16.7475 9.90865C16.1624 9.90865 15.6875 9.43373 15.6875 8.84869C15.6875 8.26366 16.1624 7.78931 16.7475 7.78931C17.335 7.78931 17.8097 8.26338 17.8097 8.84869Z"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9.5474 1.144V4.744H6.01799L9.33564 1H19.3089C19.7748 1 20.156 1.38118 20.156 1.84706V11.8152C20.156 12.2806 19.7748 12.6623 19.3089 12.6623H2.24745C1.78157 12.6623 1.40039 12.2806 1.40039 11.8152V1.84706C1.40039 1.38118 1.78157 1 2.24745 1H5.9474V2.62635"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.99707 6.08252V7.57955"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.99707 8.59839V10.0957"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.99707 11.114V12.615"
+                    stroke="#475569"
+                    stroke-miterlimit="10"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0">
+                خوراکی سلامت{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
+                    stroke="#475569"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-24 shrink-0">
+                محصولات پوست و مو{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
+                    stroke="#475569"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-8 w-16 shrink-0">
+                دستگاه و لوازم{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
+                    stroke="#475569"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-6 w-24 shrink-0">
+                محصولات بهداشتی{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-0 w-2 shrink-0">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33366 1.33325L4.00033 4.66659L0.666992 1.33325"
+                    stroke="#475569"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] mr-3 w-12 shrink-0">
+                لوازم پزشکی{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-4 w-px shrink-0">
+                <svg
+                  width="2"
+                  height="22"
+                  viewBox="0 0 2 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L0.999999 21"
+                    stroke="#CBD5E1"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-center whitespace-nowrap text-xs font-['IRANSansX'] text-[#334155] w-12 shrink-0">
+                لوازم پزشکی{" "}
+              </div>
+              <div className="min-h-0 min-w-0 mr-10 w-5 shrink-0">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 6H16M4 10.5H16M4 15H16"
+                    stroke="#334155"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="text-right whitespace-nowrap text-xs font-['IRANSansX'] text-[#00a2a2] w-[107px] shrink-0">
+                تجهیزات پزشکی زیمانو{" "}
+              </div>
+            </div>
+          </div>
         </header>
         {children}
       </body>
