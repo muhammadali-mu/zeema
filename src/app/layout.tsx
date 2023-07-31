@@ -493,7 +493,70 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
-        {children}
+        {/* {children} */}
+        {/* start of frame 6944 */}
+        <div className="w-4/5 m-auto my-10 ">
+    <div className="flex flex-row justify-center items-center gap-10  ">
+<div className="overflow-hidden bg-[linear-gradient(0deg,_rgba(15,_23,_42,_0.5)_24%,rgba(57,_67,_78,_0)_100%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat  rounded-lg  w-96  h-80 object-fill">
+<img className="object-fill" src="https://file.rendit.io/n/7T3eguYMoyCxF6W6gq0e.png" alt="" />
+
+    </div>
+    <div className="overflow-hidden bg-[linear-gradient(0deg,_rgba(15,_23,_42,_0.5)_24%,rgba(57,_67,_78,_0)_100%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat  rounded-lg w-auto  h-80 object-fill">
+<img className="object-fill" src="https://file.rendit.io/n/7T3eguYMoyCxF6W6gq0e.png" alt="" />
+    </div>
+  </div>
+  </div>
+    {/* end of frame 6944 */}
+    {/* start of  */}
+    <div className="w-4/5 m-auto">
+      <div className="flex justify-between"> 
+      <p>تخفیف ویژه</p>
+      <a href="" className="text-zeemano-400">مشاهده <span className="text-lg">{`>`}</span></a>
+      </div>
+      <div className="flex ">
+        <div className="w-[192px] h-[360px] border rounded-md border-[#F1F5F9] p-2 m-3" >
+          <div className="flex justify-between">
+            <div className=" border border-[#DC2626] rounded-md w-[39px] h-[23px] text-center text-[#DC2626]"><span>10-</span></div>
+        <svg className="stroke-zeemano-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+          <img src="https://file.rendit.io/n/53jIBOjppg7PYwU8QfB6.png" alt="" />
+          <div className="h-[104px] border-solid border-[#f1f5f9] bg-[#f8fafc]  px-1 py-2 border rounded flex flex-col justify-between"> 
+          <p className="text-sm"> نوار تست قند خون بایونیم Bionime</p>
+          <div className="text-left text-[#64748b] text-xs">مشاهده بیشتر <span>{"->"}</span></div>
+          </div>
+          <div className="flex  whitespace-nowrap text-xs justify-betweentext-xs justify-between m-3">
+          <span className="line-through font-medium text-[#64748b]">۸۳,۲۰۰ تومان</span>
+          <span className="font-medium text-[#e8891d]">۸۳,۲۰۰ تومان</span>
+          </div>
+        
+        </div>
+        <div className="w-[192px] h-[360px] border rounded-md border-[#F1F5F9] p-2 m-3" >
+          <div className="flex justify-between">
+            <div className=" border border-[#DC2626] rounded-md w-[39px] h-[23px] text-center text-[#DC2626]"><span>10-</span></div>
+        <svg className="stroke-zeemano-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+          <img src="https://file.rendit.io/n/53jIBOjppg7PYwU8QfB6.png" alt="" />
+          <div className="h-[104px] border-solid border-[#f1f5f9] bg-[#f8fafc]  px-1 py-2 border rounded flex flex-col justify-between"> 
+          <p className="text-sm"> نوار تست قند خون بایونیم Bionime</p>
+          <div className="text-left text-[#64748b] text-xs">مشاهده بیشتر <span>{"->"}</span></div>
+          </div>
+          <div className="flex  whitespace-nowrap text-xs justify-between m-3">
+          <span className="line-through font-medium text-[#64748b]">۸۳,۲۰۰ تومان</span>
+          <span className="font-medium text-[#e8891d]">۸۳,۲۰۰ تومان</span>
+          </div>
+        
+        </div>
+        
+        
+      </div>
+    </div>
+
+     
+{/*end of   */}
       </body>
     </html>
   );
