@@ -12,6 +12,10 @@ module.exports = {
           "0px 1px 1px 0px rgba(15, 23, 42, 0.1)",
           "0px 10px 6px -6px rgba(51, 65, 85, 0.1)",
         ],
+        "zeema-shadow-sm": [
+          "0px 0px 1px 0px rgba(0, 0, 0, 0.4)",
+          "0px 6px 6px -6px rgba(0, 0, 0, 0.16)",
+        ],
       },
       colors: {
         "zeemano-950": "#021113",
