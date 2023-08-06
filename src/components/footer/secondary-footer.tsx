@@ -1,6 +1,6 @@
 export default function SecondaryFooter() {
   return <>
-  <div className="flex justify-between w-full py-16 px-48">
+  <div className="flex justify-between w-full py-16 px-48 bg-neutral-50 border-t">
   <div className="flex justify-between w-[646px]  gap-20 text-xs font-light">
     <ul className=""> 
       <li className="pb-3"><a className=" hover:text-zeemano-500" href="">محصولات دیابتی</a></li>
