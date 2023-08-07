@@ -1,6 +1,6 @@
 export default function LoginButton() {
   return (
-    <button className="flex flex-row justify-center items-center gap-3 h-10 w-max px-4 bg-white border-[1.6px] border-solid border-zinc-300 rounded-lg">
+    <button className="flex flex-row justify-center items-center gap-3 h-10 w-max px-4 bg-white border-[1.6px] border-solid border-zinc-300 rounded-lg ">
       <div className="flex flex-row justify-center items-center text-slate-600 text-center whitespace-nowrap text-sm font-normal">
         <svg fill="none" width="24" height="24" viewBox="0 0 24 24">
           <path
