@@ -168,7 +168,7 @@ function Card() {
       </button>
       <div className="w-full my-2 flex items-center justify-between whitespace-pre-line">
         <p className="flex gap-1 text-xs font-medium text-slate-600">
-          <p className="line-through">{"۸۳,۲۰"}</p> تومان
+          <span className="line-through">{"۸۳,۲۰"}</span> تومان
         </p>
         <p className="font-medium text-sm text-zeemano-auxiliary-orange">
           {"۸۳,۲۰۰"} تومان
