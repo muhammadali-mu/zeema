@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -7,17 +7,15 @@ export default function Navigation() {
       className="flex flex-row justify-center items-center w-full h-10 bg-slate-50  "
     >
       <div className=" flex flex-row justify-start items-center w-full gap-5 max-w-screen-2xl px-4">
-        <p className="whitespace-nowrap text-xs  text-zeemano-500 ">
-          تجهیزات پزشکی زیمانو{" "}
-        </p>
+        <Link href={"/"}>
+          <p className="whitespace-nowrap text-xs  text-zeemano-500 hover:text-zeemano-700 ">
+            تجهیزات پزشکی زیمانو
+          </p>
+        </Link>
 
-        <ul className="flex flex-row justify-start items-center gap-5 m-1 font-light text-sm grow">
-          <li>
-            <button
-              id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
-              className="flex items-center justify-center gap-2 w-max h-6 text-slate-600  "
-            >
+        <ul className="flex flex-row justify-start items-center gap-3 m-1 font-light text-sm grow">
+          <li className="md:hidden">
+            <button className="flex items-center justify-center gap-2 w-max h-6 text-slate-600  ">
               <svg
                 width="24"
                 height="24"
@@ -33,7 +31,7 @@ export default function Navigation() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className="text-sm text-slate-700 ">لوازم پزشکی</p>
+              <p className="text-sm text-slate-700 ">دسته بندی کالا</p>
             </button>
 
             <div
@@ -77,19 +75,15 @@ export default function Navigation() {
           <hr className="w-[2px] h-6 bg-slate-300 mx-2"></hr>
 
           <li>
-            <button
-              id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
-              className="flex items-center justify-center gap-1 w-full h-6 text-slate-600  "
-            >
-              <p className="text-sm text-center whitespace-nowrap text-slate-700 ">
+            <button className="flex items-center justify-center gap-1 w-full h-8 px-3 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 text-slate-600  hover:bg-slate-100 rounded-lg group">
+              <p className="text-sm text-center whitespace-nowrap text-slate-500 group-hover:text-slate-700 focus:text-slate-700 ">
                 لوازم پزشکی
               </p>
               <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                className="stroke-slate-700 scale-50"
+                className="stroke-slate-600 visible group-hover:block scale-50 "
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -102,6 +96,7 @@ export default function Navigation() {
               </svg>
             </button>
           </li>
+
           <li>
             <button
               id="dropdownNavbarLink"

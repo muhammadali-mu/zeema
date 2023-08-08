@@ -69,9 +69,8 @@ export default function RootLayout({
       <body className={IRANSansFaNum.className}>
         <Header />
         {children}
-        <SecondaryFooter/>
-        <Footer/>
-        
+        {/* <SecondaryFooter/>
+        <Footer/> */}
       </body>
     </html>
   );
