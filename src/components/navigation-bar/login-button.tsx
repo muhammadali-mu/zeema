@@ -41,7 +41,7 @@ export default function LoginButton({
           />
         </svg>
         <p className="flex flex-row justify-center items-center px-2 ">ورود</p>
-        <p className=" block px-2  border-r border-zinc-200 group-hover:border-zinc-400 transition-all">
+        <p className="hidden xl:block px-2  border-r border-zinc-200 group-hover:border-zinc-400 transition-all">
           ثبت نام
         </p>
       </div>

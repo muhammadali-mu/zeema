@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .zeema-focuse {
+    @apply focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
@@ -15,7 +21,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 
 input[type="search"]::-webkit-search-cancel-button {
   appearance: none;

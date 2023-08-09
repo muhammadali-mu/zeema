@@ -28,7 +28,7 @@ export default function Search() {
         <input
           type="search"
           id="default-search"
-          className=" flex flex-row justify-end gap-4 items-center w-72 sm:w-full lg:w-96 h-10 p-3 pr-10 appearance-none text-sm font-light text-zinc-900 bg-slate-100 focus:outline-dashed focus:outline-1 focus:outline-slate-600 focus:outline-offset-2  focus:border-slate-500 placeholder-zinc-700 border border-zinc-300 rounded-lg"
+          className=" flex flex-row justify-end gap-4 items-center w-72 sm:w-full lg:w-96 h-10 p-3 pr-10 appearance-none text-sm font-light text-zinc-900 bg-slate-100 zeema-focuse placeholder-zinc-700 border border-zinc-300 rounded-lg"
           placeholder="جست و جو محصول یا برند در زیمانو "
           required
         />
