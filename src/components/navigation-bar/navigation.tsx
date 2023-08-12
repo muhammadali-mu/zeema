@@ -2,10 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navigationLinks = [
-  ["لوازم پزشکی", "megaMenu"],
-  ["محصولات بهداشتی", "megaMenu"],
-  ["دستگاه و لوازم ", "megaMenu"],
-  ["محصولات پوست و مو", "megaMenu"],
+  ["لوازم پزشکی", "megaMenu", ""],
+  ["محصولات بهداشتی", "megaMenu", ""],
+  ["دستگاه و لوازم ", "megaMenu", ""],
+  ["محصولات پوست و مو", "megaMenu", ""],
   ["خوراکی سلامت", "/foodHealth"],
   ["تخفیف ویژه", "/offer", "/coupon_sales_discount_shopping_offer.svg"],
 ];
