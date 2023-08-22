@@ -37,7 +37,7 @@ export default function Navigation() {
               <li className="" key={text}>
                 <Link
                   href={href}
-                  className="text-sm text-slate-700 hover:text-slate-900 hover:font-normal"
+                  className="text-sm text-slate-700 hover:text-slate-900 "
                 >
                   {text}
                 </Link>

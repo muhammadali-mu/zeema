@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/components/navigation-bar/logo";
+import Banner from "@/components/banner/banner";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <CardContainer title="تخفیف ویژه" pathto="/">
         <Card />
       </CardContainer>
+      <Banner/>
     </main>
   );
 }
