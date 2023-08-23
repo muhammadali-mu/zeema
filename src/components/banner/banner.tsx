@@ -17,7 +17,7 @@ const banerdetail = [
     imgbottom: 0,
     img1left: 380,
     img1bottom: 40,
-    style: "w-[577px]",
+    style: "w-[620px]",
     bg: " linear-gradient(360deg,rgba(103, 232, 249, 0.40)  0%, rgba(0, 162, 162, 0.40) 100%)",
     bgsvg: "/images/banner/Frame.svg",
     href: "/",
@@ -38,7 +38,7 @@ const banerdetail = [
     imgbottom: 1,
     img1left: 20,
     img1bottom: 30,
-    style: "w-[280px]",
+    style: "w-[330px]",
     bg: "linear-gradient(90deg,rgba(232, 137, 29, 0.10)  0%, rgba(43, 253, 246, 0.24) 100%)",
     bgsvg: null,
     href: "/",
@@ -59,7 +59,7 @@ const banerdetail = [
     imgbottom: 70,
     img1left: 20,
     img1button: 30,
-    style: "w-[280px]",
+    style: "w-[320px]",
     bg: "linear-gradient(45deg,rgba(0, 98, 116, 0.80)  0%,  rgba(253, 243, 232, 0.80)100%)",
     bgsvg: null,
     href: "/",
@@ -69,7 +69,7 @@ const banerdetail = [
 export default function Banner() {
   return (
     <>
-      <div className=" flex justify-between max-w-screen-2xl gap-4 h-48 my-6 ">
+      <div className=" flex justify-between max-w-screen-xl gap-4 h-48 my-6 ">
         {banerdetail.map((e) => (
           <div
             className={`group flex flex-row rounded-lg p-2 relative  ${e.style}`}

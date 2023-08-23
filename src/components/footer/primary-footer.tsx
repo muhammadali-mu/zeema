@@ -15,7 +15,7 @@ const ListOfCertificate = [
 export default function PrimaryFooter() {
   return (
     <footer>
-      <Navigation/>
+      <Navigation />
       <section className="relative flex justify-center gap-2 h-max w-full bg-gradient-to-tr  from-zeemano-auxiliary-green from-30%  to-zeemano-500">
         <Image
           className="absolute"
