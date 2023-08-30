@@ -48,6 +48,7 @@ module.exports = {
         "gradient-y": "gradient-y 15s ease infinite",
         "gradient-xy": "gradient-xy 15s ease infinite",
       },
+
       keyframes: {
         "gradient-y": {
           "0%, 100%": {

@@ -1,14 +1,25 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const slides = [
-  { src: "/images/slider/slider-1.webp", href: "/" },
-  { src: "/images/slider/slider-2.webp", href: "/" },
-  { src: "/images/slider/slider-3.webp", href: "/" },
+  { src: "/images/slider/slider-1.webp", href: "/", alt: "/" },
+  { src: "/images/slider/slider-2.webp", href: "/", alt: "/" },
+  { src: "/images/slider/slider-3.webp", href: "/", alt: "/" },
 ];
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(
+        currentSlide === slides.length - 1 ? 0 : currentSlide + 1
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
   const prevSlideHandller = () => {
     const isFirstSlide = currentSlide === 0;
@@ -26,10 +37,20 @@ export default function Slider() {
 
   return (
     <div className="max-w-[752px] w-full h-80 relative m-5 rounded-xl overflow-hidden group transition-all">
-      <div
-        style={{ backgroundImage: `url(${slides[currentSlide].src})` }}
-        className="w-full h-full bg-center bg-cover duration-500 "
-      ></div>
+      <Link
+        className="w-full h-full  duration-500 relative"
+        href={slides[currentSlide].href}
+        passHref
+        legacyBehavior
+      >
+        <Image
+          src={slides[currentSlide].src}
+          alt={slides[currentSlide].alt}
+          fill
+          loading="lazy"
+          quality={100}
+        />
+      </Link>
 
       {/* Right Arrow */}
       <span
@@ -81,15 +102,13 @@ export default function Slider() {
 
       {/* Dots */}
       {slides.length > 1 && (
-        <div className="hidden group-hover:flex absolute w-auto h-6 justify-center items-center gap-2 px-6 rounded-xl bottom-2 right-[50%] translate-x-[50%] bg-slate-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-25 backdrop-brightness-95 hover:bg-opacity-50 transition-all">
+        <div className="flex absolute w-auto h-3 justify-center items-center gap-3 px-6 rounded-md bottom-2 right-[50%] translate-x-[50%] bg-slate-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-25 backdrop-brightness-95 hover:bg-opacity-50 transition-all">
           {slides.map((slide, index) => (
             <span
               key={index}
               role="button"
-              className={`block h-3 bg-slate-100  rounded-md transition-all ${
-                currentSlide === index
-                  ? "w-6 bg-white opacity-100"
-                  : "w-3 opacity-75"
+              className={`relative flex justify-start items-start h-2 bg-slate-100  rounded-md transition-all hover:bg-white ${
+                currentSlide === index ? "w-6 " : "w-3 opacity-90 "
               }`}
               onClick={() => goToSlide(index)}
             ></span>
