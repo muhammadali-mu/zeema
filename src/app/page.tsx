@@ -5,10 +5,12 @@ import Banner from "@/components/banner/banner";
 import Aboutus from "@/components/home.tsx/aboutus";
 import Trust from "@/components/home.tsx/trust";
 import Blog from "@/components/home.tsx/blog";
+import Slider from "@/components/sliders/slider";
 
 export default function Home() {
   return (
     <main className="w-screen h-max grid grid-cols-[minmax(min-content, 1fr)] grid-rows-[repeat(auto-fit, max-content)] justify-items-center gap-y-8 px-10 text-slate-800 ">
+      <Slider />
       <CardContainer title="تخفیف ویژه" pathto="/">
         <Card />
       </CardContainer>
