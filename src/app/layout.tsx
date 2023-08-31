@@ -2,6 +2,7 @@ import Header from "@/components/navigation-bar/header";
 import Footer from "@/components/footer/primary-footer";
 import "./globals.css";
 import IRANSansXFaNum from "next/font/local";
+import Image from "next/image";
 
 const IRANSansFaNum = IRANSansXFaNum({
   src: [
@@ -68,7 +69,6 @@ export default function RootLayout({
       <body className={IRANSansFaNum.className}>
         <Header />
         {children}
-
         <Footer />
       </body>
     </html>

@@ -61,7 +61,7 @@ const blog = [
 export default function Blog() {
   return (
     <>
-      <div className="grid grid-cols-4 grid-rows-2 gap-3 max-w-screen-xl  place-items-center ">
+      <div className="grid grid-cols-4 grid-rows-2 gap-3 max-w-screen-xl  place-items-center my-16 ">
         {/* <div className=" h-full w-full col-span-2 row-span-2 col-start-3 row-start-1 bg-red-900 rounded-xl "></div> */}
         {blog.map((e) =>
           e.big ? (
