@@ -1,3 +1,65 @@
+// import Image from "next/image";
+
+// export default function BannerContainer() {
+//   const banerdetail = [
+//     {
+//       title: "سنسور قند خون ",
+//       details: "دستگاه های سیستم پایش مداوم قند خون ",
+//       importantpoint: "بدون سوزن",
+//       image: "/images/banner/FrestyLibr2__08126(1)1.png",
+//       bgsvg: "/images/banner/Frame.svg",
+//       href: "/",
+//     },
+//     {
+//       title: "دستگاه تصفیه هوا خانگی",
+//       details: "دستگاه های سیستم پایش مداوم قند خون ",
+//       importantpoint: "x",
+//       image: "/images/banner/pngegg1.png",
+//       bgsvg: "s",
+//       href: "/",
+//     },
+//     {
+//       title: "نوار تست قند خون",
+//       details: "کنترل دیابت و چک آپ اهمیت ویژه ای دارد ",
+//       importantpoint: "s",
+//       image: "/images/banner/pngwing1.png",
+//       bgsvg: "s",
+//       href: "/",
+//     },
+//   ];
+//   return (
+//     <>
+//       <div className="flex justify-between max-w-screen-xl gap-4 h-48 my-6 overflow-hidden ">
+//         {banerdetail.map((el, i) => (
+//           <Banners
+//             title={el.title}
+//             details={el.details}
+//             importantpoint={el.importantpoint}
+//             image={el.image}
+//             bgsvg={el.bgsvg}
+//             href={el.href}
+//             key={i}
+//           ></Banners>
+//         ))}
+//       </div>
+//     </>
+//   );
+// }
+
+// function Banners({ title, details, importantpoint, image, bgsvg, href }:{title:string}) {
+//   return (
+//     <div>
+//       {" "}
+//       <h1>{title}</h1>
+//       <h2>{details}</h2>
+//       <div>{importantpoint}</div>
+//       <div>{bgsvg}</div>
+//       <div>{href}</div>
+//       <div>{image}</div>
+//     </div>
+//   );
+// }
+
 import Image from "next/image";
 
 const banerdetail = [
@@ -53,7 +115,7 @@ const banerdetail = [
     image1: null,
     imgwidth1: null,
     imgheight1: null,
-    left: 20,
+    left: 140,
     bottom: 90,
     imgleft: 20,
     imgbottom: 70,
@@ -66,26 +128,22 @@ const banerdetail = [
   },
 ];
 
-export default function Banner() {
+export default function BannerContainer() {
   return (
     <>
-      <div className=" flex justify-between max-w-screen-xl gap-4 h-48 my-6 ">
-        {banerdetail.map((e) => (
+      <div className=" flex justify-between max-w-screen-xl gap-4 h-48 my-6 overflow-hidden ">
+        {banerdetail.map((e, i) => (
           <div
             className={`group flex flex-row rounded-lg p-2 relative  ${e.style}`}
             style={{
               background: `${e.bg}`,
             }}
-            key={e.title}
+            key={i}
           >
             <div
+              className="h-full w-full bottom-2 left-72 group-hover:rotate-[11deg] absolute duration-700"
               style={{
-                backgroundImage: `url(${e.bgsvg})`,
-                width: "50%",
-                height: "90%",
-                position: "absolute",
-                zIndex: -1,
-                right: 1,
+                background: `url(${e.bgsvg})`,
               }}
             ></div>
             <div
@@ -106,7 +164,7 @@ export default function Banner() {
 
             <div className="">
               <Image
-                className="group-hover:scale-y-90"
+                className=" group-hover:scale-110 transition-all duration-700"
                 style={{
                   position: "absolute",
                   left: `${e.imgleft}px`,
@@ -122,6 +180,7 @@ export default function Banner() {
               />
               {e.image1 ? (
                 <Image
+                  className="group-hover:scale-110 transition-all duration-700"
                   style={{
                     position: "absolute",
                     left: `${e.img1left}px`,
@@ -139,7 +198,7 @@ export default function Banner() {
 
             <button
               style={{ direction: "rtl" }}
-              className=" flex w-32 h-8 px-3 bg-slate-800 bg-opacity-80 rounded-xl justify-between items-center  absolute bottom-4 left-5 text-white text-xs font-medium"
+              className=" flex w-32 h-8 px-3 bg-slate-800 bg-opacity-80 rounded-xl justify-between items-center  absolute bottom-4 left-5 text-white text-xs font-medium cursor-pointer"
             >
               مشاهده و خرید
               <span>
@@ -157,4 +216,7 @@ export default function Banner() {
       </div>
     </>
   );
+}
+function Banner() {
+  return;
 }

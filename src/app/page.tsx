@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import Banner from "@/components/banner/banner";
 import Aboutus from "@/components/home.tsx/aboutus";
 import Trust from "@/components/home.tsx/trust";
 import Blog from "@/components/home.tsx/blog";
 import Slider from "@/components/sliders/slider";
+import BannerContainer from "@/components/banner/banner";
 
 const products = [
   {
@@ -25,7 +24,7 @@ export default function Home() {
       <CardContainer title="تخفیف ویژه" pathto="/">
         <Card />
       </CardContainer>
-      <Banner />
+      <BannerContainer />
       <Blog />
       <Trust />
       <Aboutus />
