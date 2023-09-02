@@ -23,7 +23,7 @@ export default function LoginButton({
             className="stroke-slate-600 group-hover:stroke-slate-800"
           />
         </svg>
-        <p className="text-center whitespace-nowrap text-sm font-medium truncate max-w-[110px] text-slate-600   group-hover:text-slate-800">
+        <p className="text-center whitespace-nowrap text-sm font-medium truncate max-w-[110px] text-slate-600 group-hover:text-slate-800">
           {userIdentity}
         </p>
       </div>

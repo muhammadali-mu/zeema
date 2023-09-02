@@ -1,12 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/components/navigation-bar/logo";
+
 import Banner from "@/components/banner/banner";
 import Aboutus from "@/components/home.tsx/aboutus";
 import Trust from "@/components/home.tsx/trust";
 import Blog from "@/components/home.tsx/blog";
 import Slider from "@/components/sliders/slider";
 
+const products = [
+  {
+    id: 1,
+    href: "/",
+    src: "",
+    alt: "",
+    title: "سرنگ انسولین بی دی BD حجم 1 سی سی",
+    price: "",
+    offPrice: "",
+  },
+];
 export default function Home() {
   return (
     <main className="w-full h-max grid grid-cols-[minmax(min-content, 1fr)] grid-rows-[repeat(auto-fit, max-content)] justify-items-center gap-y-8 px-10 text-slate-800 ">
@@ -66,7 +77,7 @@ function CardContainer({
 
 function Card() {
   return (
-    <figure className="group w-48 h-[360px] p-2 relative flex flex-col items-center  bg-white border border-zinc-100 rounded-lg shadow-md">
+    <figure className="group w-48 h-[360px] p-2 relative flex flex-col items-center cursor-pointer bg-white border border-zinc-100 rounded-lg hover:shadow-md">
       <Link
         href={"/"}
         className="w-max relative flex flex-col items-center hover:"
@@ -82,7 +93,7 @@ function Card() {
         />
         <span
           role="button"
-          className="transition-all delay-100 duration-300 ease-in-out invisible h-0 group-hover:visible group-hover:h-10 absolute bottom-0 w-44  text-zeemano-500 flex justify-center items-center gap-2 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-zeemano-500 border-b-0 rounded-t-lg"
+          className="transition-all duration-300 ease-in-out invisible h-0 group-hover:visible group-hover:h-10 absolute bottom-0 w-44  text-zeemano-500 flex justify-center items-center gap-2 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-zeemano-500 border-b-0 rounded-t-lg"
         >
           خرید
           <svg
@@ -90,7 +101,7 @@ function Card() {
             height="24"
             fill="none"
             viewBox="0 0 24 24"
-            className="stroke-zeemano-500"
+            className="stroke-zeemano-500 "
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -103,16 +114,16 @@ function Card() {
         </span>
       </Link>
       <figcaption className="w-44 h-36 flex flex-col justify-between p-1  mx-2  border bg-slate-50 border-zinc-100 rounded-b-lg">
-        <Link href="/">
+        <div>
           <h5 className="mb-1 text-sm font-medium tracking-tight text-slate-700 ">
             {"سرنگ انسولین بی دی BD حجم 1 سی سی"}
           </h5>
-          {/* <p className="h-10 mb-3 indent-2  truncate text-xs text-justify font-light bg-green-300 text-gray-700 dark:text-gray-400">
-        {
-          "سرنگ انسولین BD حجم 1 سی سی ساخت کشور آمریکا می‌باشد. این محصول با بهره‌وری از تکنولوژی خاص برند BD درد را به حداقل می‌رساند"
-        }
-      </p> */}
-        </Link>
+          <p className="mb-2 h-14 whitespace-pre-line leading-5 line-clamp-3 text-xs text-justify font-light text-gray-800 dark:text-gray-400">
+            {
+              "سرنگ انسولین BD حجم 1 سی سی ساخت کشور آمریکا می‌باشد. این محصول با بهره‌وری از تکنولوژی خاص برند BD درد را به حداقل می‌رساند"
+            }
+          </p>
+        </div>
         <Link
           href={"/"}
           className="inline-flex items-center self-end gap-1 text-xs font-light text-center text-slate-500 "
