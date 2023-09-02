@@ -1,20 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const navigationLinks = [
-  ["لوازم پزشکی", "megaMenu", ""],
-  ["محصولات بهداشتی", "megaMenu", ""],
-  ["دستگاه و لوازم ", "megaMenu", ""],
-  ["محصولات پوست و مو", "megaMenu", ""],
-  ["خوراکی سلامت", "/foodHealth"],
-  ["تخفیف ویژه", "/offer", "/coupon_sales_discount_shopping_offer.svg"],
-];
-
-export default function Navigation() {
+export default function Navigation({ navigation }: { navigation: any }) {
   return (
     <nav
       aria-label="primary-navigation"
-      className="flex flex-row justify-center items-center w-full h-10 bg-slate-50  "
+      className="flex flex-row justify-center items-center w-full h-10 bg-slate-100  "
     >
       <div className=" flex flex-row justify-start items-center w-full gap-5 max-w-screen-2xl px-4">
         <Link href={"/"}>
@@ -23,7 +14,7 @@ export default function Navigation() {
           </p>
         </Link>
 
-        <ul className="flex flex-row justify-start items-center gap-0 m-1 font-light text-sm grow">
+        <ul className="flex flex-row justify-start items-center gap-1 font-light text-sm grow">
           <li className="md:hidden">
             <button className="flex items-center justify-center gap-2 w-max h-6 text-slate-600  ">
               <svg
@@ -84,7 +75,7 @@ export default function Navigation() {
 
           <hr className="w-[2px] h-6 bg-slate-300 mx-1"></hr>
 
-          <DesktopNavigationButton navigationLinks={navigationLinks} />
+          <DesktopNavigationButton navigationLinks={navigation} />
         </ul>
 
         <div className="flex flex-row justify-between items-center gap-4 ">
@@ -109,12 +100,24 @@ function DesktopNavigationButton({
   navigationLinks: any;
 }) {
   return navigationLinks.map(
-    ([name, item, svg]: [name: string, item: string, svg: string]) => (
-      <li key={name}>
-        {item === "megaMenu" ? (
-          <button className="flex items-center justify-center gap-2 w-full h-8 px-3 zeema-focuse text-slate-600  hover:bg-zinc-200 rounded-lg group">
+    ({
+      id,
+      text,
+      src,
+      href,
+      megaMenu,
+    }: {
+      id: string;
+      text: string;
+      src: string;
+      href: string;
+      megaMenu: any;
+    }) => (
+      <li key={id}>
+        {megaMenu ? (
+          <button className="flex items-center justify-center gap-2 w-full h-8 px-2 zeema-focuse text-slate-600  hover:bg-slate-200 rounded-lg group">
             <p className="text-sm text-center whitespace-nowrap text-slate-500 group-hover:text-slate-700 group-focus:text-slate-700 ">
-              {name}
+              {text}
             </p>
 
             <Image
@@ -128,13 +131,13 @@ function DesktopNavigationButton({
           </button>
         ) : (
           <Link
-            href={item}
-            className="flex items-center justify-center gap-2 w-full h-8 px-3 zeema-focuse text-slate-600  hover:bg-zinc-200 rounded-lg group"
+            href={href}
+            className="flex items-center justify-center gap-2 w-full h-8 px-3 zeema-focuse text-slate-600  hover:bg-slate-200 rounded-lg group"
           >
-            {svg && (
+            {src && (
               <Image
                 className=""
-                src={`/icons/Icon/Stroke/${svg}`}
+                src={`/icons/Icon/Stroke/${src}`}
                 alt="chevron"
                 width={32}
                 height={32}
@@ -142,7 +145,7 @@ function DesktopNavigationButton({
               />
             )}
             <p className="text-sm text-center whitespace-nowrap text-slate-500 group-hover:text-slate-700 group-focus:text-slate-700 ">
-              {name}
+              {text}
             </p>
           </Link>
         )}
