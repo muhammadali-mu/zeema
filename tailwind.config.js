@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auto-fill-200": "repeat(auto-fill, minmax(200px, 1fr))",
+        "auto-fit-200": "repeat(auto-fit, minmax(200px, 1fr))",
+      },
+      gridTemplateRows: {
+        "auto-fill-max": "repeat(auto-fill, minmax(max-content, 1fr))",
+        "auto-fit-max": "repeat(auto-fit, minmax(max-content, 1fr))",
+      },
+
       dropShadow: {
         "zeemano-shadow-nav": [
           "0px 1px 1px 0px rgba(15, 23, 42, 0.1)",

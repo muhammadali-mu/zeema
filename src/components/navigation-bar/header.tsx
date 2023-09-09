@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LoginButton from "./login-button";
 import Logo from "./logo";
 import NotifIcon from "./notif-icon";
@@ -129,7 +130,7 @@ const navigationTab = [
       },
       {
         head: "البسه پزشکی",
-        src: "",
+        src: "/health_worker.svg",
         href: "/",
         tags: [
           { text: "روپوش پزشکی", href: "/" },
@@ -138,25 +139,25 @@ const navigationTab = [
       },
       {
         head: "منسوجات",
-        src: "/",
+        src: "/domestic_worker.svg",
         href: "/",
         tags: [],
       },
       {
         head: "ضدعفونی کننده",
-        src: "",
+        src: "/spray_throat_medical_medicine_healthcare.svg",
         href: "/",
         tags: [],
       },
       {
         head: "دستگاه فیزیوتراپی",
-        src: "",
+        src: "/radiography_radiology_x_ray_xray_medical_medicine.svg",
         href: "/",
         tags: [],
       },
       {
         head: "لوازم عمومی پزشکی",
-        src: "",
+        src: "/cross_caduceus_medical_medicine_healthcare_pharmacy.svg",
         href: "/",
         tags: [],
       },
@@ -198,7 +199,7 @@ const navigationTab = [
   {
     id: "_42356739",
     text: "خوراکی  سلامت",
-    src: "",
+    src: "/",
     href: "/foodHealth",
   },
   {
