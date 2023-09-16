@@ -131,7 +131,7 @@ const banerdetail = [
 export default function BannerContainer() {
   return (
     <>
-      <div className=" flex justify-between max-w-screen-xl gap-4 h-48 my-6 overflow-hidden ">
+      <div className=" flex justify-between max-w-screen-xl gap-4 h-48 my-6 overflow-hidden  ">
         {banerdetail.map((e, i) => (
           <div
             className={`group flex flex-row rounded-lg p-2 relative  ${e.style}`}
@@ -141,7 +141,7 @@ export default function BannerContainer() {
             key={i}
           >
             <div
-              className="h-full w-full bottom-2 left-72 group-hover:rotate-[11deg] absolute duration-700"
+              className="h-full w-full bottom-2 left-72 group-hover:rotate-[11deg] absolute  duration-700"
               style={{
                 background: `url(${e.bgsvg})`,
               }}
@@ -198,7 +198,7 @@ export default function BannerContainer() {
 
             <button
               style={{ direction: "rtl" }}
-              className=" flex w-32 h-8 px-3 bg-slate-800 bg-opacity-80 rounded-xl justify-between items-center  absolute bottom-4 left-5 text-white text-xs font-medium cursor-pointer"
+              className=" flex w-32 h-8 px-3 bg-slate-800 bg-opacity-80 rounded-xl justify-between items-center  absolute bottom-4 left-5 text-white text-xs font-medium cursor-pointer "
             >
               مشاهده و خرید
               <span>

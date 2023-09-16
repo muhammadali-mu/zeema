@@ -68,7 +68,6 @@ export default function RootLayout({
     <html dir="rtl" lang="fa-IR">
       <body className={IRANSansFaNum.className}>
         <Header />
-
         {children}
         <Footer />
       </body>

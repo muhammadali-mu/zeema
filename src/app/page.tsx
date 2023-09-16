@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Aboutus from "@/components/home.tsx/aboutus";
@@ -5,6 +6,9 @@ import Trust from "@/components/home.tsx/trust";
 import Blog from "@/components/home.tsx/blog";
 import Slider from "@/components/sliders/slider";
 import BannerContainer from "@/components/banner/banner";
+import AddtoBasket from "@/components/button/addtobasket";
+import { useState } from "react";
+import BasketCounter from "@/components/button/basketcounter";
 
 const products = [
   {
@@ -75,104 +79,207 @@ function CardContainer({
 }
 
 function Card() {
+  const [cardmodalisopen, setcardmodalisopen] = useState(false);
+  function handlecardmodal() {
+    setcardmodalisopen(!cardmodalisopen);
+  }
   return (
-    <figure className="group w-48 h-[360px] p-2 relative flex flex-col items-center cursor-pointer bg-white border border-zinc-100 rounded-lg hover:shadow-md">
-      <Link
-        href={"/"}
-        className="w-max relative flex flex-col items-center hover:"
-      >
-        <Image
-          className="rounded-t-lg"
-          src={"/images/bdsoozan.jpg"}
-          alt="product"
-          width={172}
-          height={172}
-          loading="lazy"
-          quality={100}
-        />
-        <span
-          role="button"
-          className="transition-all duration-300 ease-in-out invisible h-0 group-hover:visible group-hover:h-10 absolute bottom-0 w-44  text-zeemano-500 flex justify-center items-center gap-2 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-zeemano-500 border-b-0 rounded-t-lg"
+    <>
+      <figure className="group w-48 h-[360px] p-2 relative flex flex-col items-center cursor-pointer bg-white border border-zinc-100 rounded-lg hover:shadow-md ">
+        <Link
+          href={"/"}
+          className="w-max relative flex flex-col items-center hover:"
         >
-          خرید
+          <Image
+            onClick={handlecardmodal}
+            className="rounded-t-lg "
+            src={"/images/bdsoozan.jpg"}
+            alt="product"
+            width={172}
+            height={172}
+            loading="lazy"
+            quality={100}
+          />
+          <span
+            onClick={handlecardmodal}
+            role="button"
+            className="transition-all duration-300 ease-in-out invisible h-0 group-hover:visible group-hover:h-10 absolute bottom-0 w-44  text-zeemano-500 flex justify-center items-center gap-2 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-zeemano-500 border-b-0 rounded-t-lg  overflow-hidden"
+          >
+            خرید
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="stroke-zeemano-500 "
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+        </Link>
+        <figcaption className="w-44 h-36 flex flex-col justify-between p-1  mx-2  border bg-slate-50 border-zinc-100 rounded-b-lg">
+          <div>
+            <h5 className="mb-1 text-sm font-medium tracking-tight text-slate-700 ">
+              {"سرنگ انسولین بی دی BD حجم 1 سی سی"}
+            </h5>
+            <p className="mb-2 h-14 whitespace-pre-line leading-5 line-clamp-3 text-xs text-justify font-light text-gray-800 dark:text-gray-400">
+              {
+                "سرنگ انسولین BD حجم 1 سی سی ساخت کشور آمریکا می‌باشد. این محصول با بهره‌وری از تکنولوژی خاص برند BD درد را به حداقل می‌رساند"
+              }
+            </p>
+          </div>
+          <Link
+            href={"/"}
+            className="inline-flex items-center self-end gap-1 text-xs font-light text-center text-slate-500 "
+          >
+            مشاهده بیشتر
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-slate-500"
+            >
+              <path
+                d="M3.22222 8.44434L1 6.22211M1 6.22211L3.22222 3.99989M1 6.22211L11 6.22211"
+                strokeWidth="0.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </Link>
+        </figcaption>
+        <div className="absolute top-2 right-3 px-2 pt-1 flex items-end justify-center bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-red-600 rounded ">
+          <p className="text-sm font-bold text-red-600 text-end">% {16} -</p>
+        </div>
+        <button className="absolute top-2 left-1">
           <svg
+            className="stroke-zeemano-500"
             width="24"
             height="24"
-            fill="none"
             viewBox="0 0 24 24"
-            className="stroke-zeemano-500 "
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M16.3333 10.8889V6.44444C16.3333 5.2657 15.8651 4.13524 15.0316 3.30175C14.1981 2.46825 13.0676 2 11.8889 2C10.7101 2 9.57969 2.46825 8.74619 3.30175C7.9127 4.13524 7.44444 5.2657 7.44444 6.44444V10.8889M4.11111 8.66667H19.6667L20.7778 22H3L4.11111 8.66667Z"
+              d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
           </svg>
-        </span>
-      </Link>
-      <figcaption className="w-44 h-36 flex flex-col justify-between p-1  mx-2  border bg-slate-50 border-zinc-100 rounded-b-lg">
-        <div>
-          <h5 className="mb-1 text-sm font-medium tracking-tight text-slate-700 ">
-            {"سرنگ انسولین بی دی BD حجم 1 سی سی"}
-          </h5>
-          <p className="mb-2 h-14 whitespace-pre-line leading-5 line-clamp-3 text-xs text-justify font-light text-gray-800 dark:text-gray-400">
-            {
-              "سرنگ انسولین BD حجم 1 سی سی ساخت کشور آمریکا می‌باشد. این محصول با بهره‌وری از تکنولوژی خاص برند BD درد را به حداقل می‌رساند"
-            }
+        </button>
+        <div className="w-full my-2 flex items-center justify-between whitespace-pre-line">
+          <p className="flex gap-1 text-xs font-medium text-slate-600">
+            <span className="line-through">{"۸۳,۲۰"}</span> تومان
+          </p>
+          <p className="font-medium text-sm text-zeemano-auxiliary-orange">
+            {"۸۳,۲۰۰"} تومان
           </p>
         </div>
-        <Link
-          href={"/"}
-          className="inline-flex items-center self-end gap-1 text-xs font-light text-center text-slate-500 "
-        >
-          مشاهده بیشتر
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="stroke-slate-500"
-          >
-            <path
-              d="M3.22222 8.44434L1 6.22211M1 6.22211L3.22222 3.99989M1 6.22211L11 6.22211"
-              strokeWidth="0.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </Link>
-      </figcaption>
-      <div className="absolute top-2 right-3 px-2 pt-1 flex items-end justify-center bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-red-600 rounded ">
-        <p className="text-sm font-bold text-red-600 text-end">% {16} -</p>
-      </div>
-      <button className="absolute top-2 left-1">
-        <svg
-          className="stroke-zeemano-500"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 4.22222C6 3.63285 6.18061 3.06762 6.5021 2.65087C6.82359 2.23413 7.25963 2 7.71429 2H16.2857C16.7404 2 17.1764 2.23413 17.4979 2.65087C17.8194 3.06762 18 3.63285 18 4.22222V22L12 18.1111L6 22V4.22222Z"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-      <div className="w-full my-2 flex items-center justify-between whitespace-pre-line">
-        <p className="flex gap-1 text-xs font-medium text-slate-600">
-          <span className="line-through">{"۸۳,۲۰"}</span> تومان
-        </p>
-        <p className="font-medium text-sm text-zeemano-auxiliary-orange">
-          {"۸۳,۲۰۰"} تومان
-        </p>
-      </div>
-    </figure>
+      </figure>
+
+      {cardmodalisopen && (
+        <div className="fixed top-0 left-0 right-0 z-20 w-full pt-4  overflow-y-auto  h-full max-h-ful bg-zinc-950 bg-opacity-60 backdrop-blur-md  mt-[88px] ">
+          <div className=" flex h-full w-full flex-row ">
+            <div className=" bg-white w-[375px]">
+              <div className="flex h-14 justify-between p-5 border-b">
+                <p className="text-sm">گزینه رو انتخاب کنید</p>
+                <button onClick={handlecardmodal}>
+                  <Image
+                    src={"/icons/icon/stroke/x.svg"}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div className="flex mt-3 mb-3 ">
+                <div className="flex flex-col h-[160px] w-[195px] justify-between px-3 ">
+                  <div>
+                    <p className="text-sm">ثابت کننده شانه و بازو</p>
+                    <span className="text-xs">طب و صنعت</span>
+                  </div>
+
+                  <div>
+                    <div className=" flex flex-col w-full h-[52px] text-left text-xs gap-2">
+                      <div className="flex justify-end items-center gap-2">
+                        <div className="px-2 pt-1 flex items-end justify-center bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60 backdrop-brightness-90 border border-red-600 rounded">
+                          <span className="text-red-600">{"27"}%-</span>
+                        </div>
+                        <p className="">
+                          <span className="line-through">{"277,400"}</span>
+                          تومان
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          {"189,000"}
+                          <span className="pr-1">تومان</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/images/bdsoozan.jpg"}
+                  alt="product"
+                  width={172}
+                  height={172}
+                  loading="lazy"
+                  quality={100}
+                />
+              </div>
+              <div className="flex mx-8 flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-slate-700 text-xs">سایز</span>
+                  <p className="text-slate-800 text-xs font-medium">
+                    سایز پیش فرض {"لارج"}
+                  </p>
+                </div>
+                <div className="flex gap-2">
+                  <div className="flex justify-center items-center cursor-pointer  h-6 border rounded   border-slate-400 bg-white text-slate-400  ">
+                    <p className="text-sm m-2">X</p>
+                  </div>
+                  <div className="flex justify-center items-center cursor-pointer  h-6 border rounded   border-slate-400 bg-white text-slate-400  ">
+                    <p className="text-sm m-2">Xl</p>
+                  </div>
+                  <div className="flex justify-center items-center cursor-pointer  h-6 border rounded   border-slate-400 bg-white text-slate-400  ">
+                    <p className="text-sm m-2">M</p>
+                  </div>
+                  <div className="flex justify-center items-center cursor-pointer  h-6 border rounded   border-slate-400 bg-white text-slate-400  ">
+                    <p className="text-sm m-2">XXl</p>
+                  </div>
+                  <div className="flex justify-center items-center cursor-pointer  h-6 border rounded   border-slate-400 bg-white text-slate-400  ">
+                    <p className="text-sm m-2">XXXl</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex mx-8 mt-4 flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-slate-700 text-xs">تعداد</span>
+                  <p className="text-slate-800 text-xs font-medium">
+                    پیش فرض {"1"} عدد
+                  </p>
+                </div>
+                <BasketCounter />
+              </div>
+              <p className=" text-xs font-medium text-center mt-6">
+                نحوه ارسال و شیوه پرداخت را در ادامه فرایند انتخاب می کنید{" "}
+              </p>
+              <AddtoBasket />
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

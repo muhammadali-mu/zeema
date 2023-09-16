@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function LoginButton({
   auth = false,
   userIdentity = "خوش آدید",
@@ -5,6 +7,10 @@ export default function LoginButton({
   auth: boolean;
   userIdentity: string;
 }) {
+  // const [openloginpage , setopenloginpage] =useState(true)
+  // function handlelogin(){
+  //   setopenloginpage(!openloginpage)
+  // }
   return auth ? (
     <button className=" flex items-center justify-center h-10 bg-gradient-to-r p-[2px] from-zeemano-500 via-zeemano-200 to-cyan-300 rounded-lg animate-gradient-xy hover:shadow-md transition-all group">
       <div className="flex flex-row items-center justify-center gap-1 px-4 h-full w-full  bg-white rounded-[6px]">

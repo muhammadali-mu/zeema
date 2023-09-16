@@ -217,7 +217,7 @@ const users = [
     email: "",
     age: "27",
     phone: "09121111324",
-    auth: true,
+    auth: false,
     cart: [{ productId: "id_12345" }],
     notification: ["message 1", "message 2 "],
     searchHistory: ["string 1", "string 2"],
@@ -286,9 +286,9 @@ export default function Header() {
 
         <Navigation navigation={navigationTab} />
       </header>
-      <BackDrop>
+      {/* <BackDrop>
         <MegaMenu selectTab={navigationTab[0]} />
-      </BackDrop>
+      </BackDrop> */}
     </>
   );
 }
